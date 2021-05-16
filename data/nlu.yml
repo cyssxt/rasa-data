@@ -1,6 +1,10 @@
 version: "2.0"
 
 nlu:
+- intent: user_1
+  examples: |
+    - aaa
+
 - intent: greet
   examples: |
     - hey

@@ -8,8 +8,11 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - user_1
 
 responses:
+  utter_last:
+  - text: 'You are a good man!'
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -22,6 +25,9 @@ responses:
 
   utter_happy:
   - text: "Great, carry on!"
+
+  utter_happen:
+    - text: 'What happened？'
 
   utter_goodbye:
   - text: "Bye"

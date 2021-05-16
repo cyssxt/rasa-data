@@ -2,6 +2,11 @@ version: "2.0"
 
 stories:
 
+- story: user_tell
+  steps:
+  - intent: user_1
+  - action: utter_last
+
 - story: happy path
   steps:
   - intent: greet
@@ -11,13 +16,14 @@ stories:
 
 - story: sad path 1
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+  #  - action: utter_happy
+    - action: utter_happen
 
 - story: sad path 2
   steps:
